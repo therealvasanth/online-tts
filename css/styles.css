@@ -2,3 +2,25 @@ header {
     font-family: monospace;
     font-weight: bolder;
 }
+
+#ttsInput {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;        
+}
+
+.license {
+    position: auto;
+    margin: 0 auto;
+}
