@@ -7,7 +7,7 @@
     <title>Online TTS</title>
     <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
 </head>
 <body>
     <header>
@@ -17,13 +17,13 @@
             </div>         
         </div>    
     </header>        
-    <br>
+    
     <h3 class="checker" onclick="checkSupport()">( check your browser compatibility )</h3>
     <section>
-        <textarea id="ttsInput" class="topcoat-textarea" placeholder="Paste any text here and click the SPEAK button below to convert the text in to speech."></textarea>             
+        <textarea id="ttsInput" class="topcoat-textarea" placeholder="Yo... Whazzzup ??? Paste anything here, and press the speak button to convert text into speech !!!"></textarea>             
         <div id="customise-options">
             <label id="voice-label">
-                Select Voice :
+                Select voice :
                 <div id="voice-container">
                     <select id="select-voice">
                         <option value="1">UK Female</option>
@@ -32,14 +32,16 @@
                         <option value="4">US Male</option>
                         <option value="5">Australian Female</option>
                         <option value="6">Dutch Female</option>            
-                        <option value="7">Hindi Female</option>
+                        <!--        
+                            <option value="7">Hindi Female</option> 
+                        -->
                         <option value="8">Japanese Female</option>
                         <option value="9">Korean Female</option>                                    
                     </select>                      
                 </div>
             </label>   
             <label id="speed-label">
-                Select Speed :
+                Select speech speed :
                 <div id="speed-container">
                     <input id="select-speed" type="range" class="topcoat-range" min="0" max="1.5" value="0.8" step="0.1" onchange="setSpeed(this.value)">
                 </div>
@@ -47,7 +49,7 @@
         </div>
         <div class="button-row">
             <button id="stop-button" class="topcoat-button--large" onclick="stopSpeech()">STOP</button>
-            <button id="speak-button" class="topcoat-button--large--cta" onclick="speakHello()" >SPEAK</button>            
+            <button id="speak-button" class="topcoat-button--large--cta" onclick="startSpeech()" >SPEAK</button>            
         </div>
     </section>
     <br>
@@ -62,6 +64,7 @@
         </div>
         <div style="clear:both;">&nbsp;</div>           
     </footer>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

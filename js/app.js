@@ -1,10 +1,22 @@
-var info = "Paste any text here and click the SPEAK button below to convert the text in to speech.";
-var nativeVoice = 1, voices, speechSpeed = 0.8;
-var setSpeed = function(x) {
-    var x = document.getElementById("select-speed").value;
-    speechSpeed = x;
+var nativeVoice = 1, voices, speechSpeed = 0.8,info;
+
+var setInput = function() {
+    var a = document.getElementById("ttsInput").value;
+    if(a !== "") {
+        info = a;
+    }
+    else {
+        info = "Yo... Whazzzup ??? Paste anything here, and press the speak button to convert text into speech !!!";
+    }
 }
-var setVoice = function() {
+
+var setSpeed = function(x) {
+    var b = document.getElementById("select-speed").value;
+    speechSpeed = b;
+}
+
+var startSpeech = function() {
+    setInput();
     voices = document.getElementById("select-voice");
     nativeVoice = voices.options[voices.selectedIndex].value;
     setSpeed();
@@ -27,9 +39,9 @@ var setVoice = function() {
         case "6":
             responsiveVoice.speak(info, "Dutch Female", {rate: speechSpeed});
             break;
-        case "7":
-            responsiveVoice.speak(info, "Hindi Female", {rate: speechSpeed});
-            break;
+//        case "7":
+//          responsiveVoice.speak(info, "Hindi Female", {rate: speechSpeed});
+//          break;
         case "8":
             responsiveVoice.speak(info, "Japanese Female", {rate: speechSpeed});
             break;
@@ -39,10 +51,6 @@ var setVoice = function() {
     }
 }
 
-
-var speakHello = function(){
-        setVoice();      
-};
 
 var stopSpeech = function() {
     responsiveVoice.cancel();
