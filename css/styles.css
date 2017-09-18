@@ -10,14 +10,30 @@ header {
     font-size: 24px;
 }
 
+.button-row {
+    margin-top: 20px;
+    text-align: center;    
+}
+
+#stop-button {
+    margin-left: 0px;
+}
+
+#speak-button {
+    margin-left: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 footer {
+    text-align: center; 
     position: absolute;
     right: 0;
-    bottom: 0;
     left: 0;
+    margin-top: 150px;
     padding: 1rem;
-    background-color: #efefef;
-    text-align: center;        
 }
 
 .license {
