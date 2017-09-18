@@ -3,6 +3,19 @@ header {
     font-weight: bolder;
 }
 
+.checker {
+    text-align: center;
+    text-decoration: underline;
+    color: #7C4A45;
+    font-family: monospace;
+    font-style: italic;    
+}
+
+.checker:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
 #ttsInput {
     width: 70%;
     display: block;
