@@ -1,3 +1,11 @@
+body {
+    font-family: monospace;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
 header {
     font-family: monospace;
     font-weight: bolder;
@@ -7,7 +15,6 @@ header {
     text-align: center;
     text-decoration: underline;
     color: #7C4A45;
-    font-family: monospace;
     font-style: italic;    
 }
 
@@ -23,6 +30,42 @@ header {
     font-size: 24px;
 }
 
+#customise-options {
+    text-align: center;
+}
+
+select, label, input {
+    display: inline-block;
+}
+
+#voice-label {
+    margin-top: 25px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+#voice-container {
+    margin-top: 15px;
+}
+
+#select-voice {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#speed-label {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-weight: bold;    
+}
+
+#speed-container {
+    margin-top: 25px;
+}
+
+#select-speed {
+    margin-top: 2px;
+}
 .button-row {
     margin-top: 20px;
     text-align: center;    
@@ -45,7 +88,7 @@ footer {
     position: absolute;
     right: 0;
     left: 0;
-    margin-top: 150px;
+    margin-top: 20px;
     padding: 1rem;
 }
 
