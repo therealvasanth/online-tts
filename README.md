@@ -1,65 +1,29 @@
-# Project Title
+# ONLINE TTS
 
-One Paragraph of project description goes here
+Online TTS converts any text into speech easily.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Just paste any text you want to be spoken out in the TEXTAREA and press the SPEAK button. To stop the speach press the STOP button.
 
-### Prerequisites
 
-What things you need to install the software and how to install them
+### USING VIA KEYBOARD
 
-```
-Give examples
-```
+* Press 'i' to highlight the TEXTAREA and " CTRL+V " to paste the text inside it.
 
-### Installing
+* Press " CTRL+ENTER " to speak out the pasted text.
 
-A step by step series of examples that tell you have to get a development env running
+* To stop the speech, press " CTRL+C "
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [ResponsiveVoice.JS](https://responsivevoice.org/) - The web framework used
-* [Topcoat](http://topcoat.io/) - Dependency Management
+* [ResponsiveVoice.JS](https://responsivevoice.org/) - A HTML5-based Text-To-Speech library designed to add voice features to web sites and apps across all smartphone, tablet and desktop devices. It supports 51 languages through 168 voices, no dependencies and weighs just 14kb… Try It!
+
+* [Topcoat](http://topcoat.io/) - CSS for clean and fast web apps.
+
+* [Mousetrap](https://craig.is/killing/mice) - A simple library for handling keyboard shortcuts in Javascript.
+
 
 ## Authors
 
@@ -72,5 +36,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Thanks to ResponsiveVoice.JS
-* Thanks to Topcoat.io
+* Thanks to Topcoat
+* Thanks to Mousetrap
 
