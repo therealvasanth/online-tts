@@ -27,7 +27,7 @@ Just paste any text you want to be spoken out in the TEXTAREA and press the SPEA
 
 ## Authors
 
-* **Vasanth Selvam** - *Initial work* - [therealvasanth](https://github.com/therealvasanth)
+* **Vasanth Selvam** - [therealvasanth](https://github.com/therealvasanth)
 
 ## License
 
