@@ -27,7 +27,7 @@ header {
     width: 70%;
     display: block;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #customise-options {
@@ -66,6 +66,7 @@ select, label, input {
 #select-speed {
     margin-top: 2px;
 }
+
 .button-row {
     margin-top: 30px;
     text-align: center;    

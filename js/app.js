@@ -51,7 +51,6 @@ var startSpeech = function() {
     }
 }
 
-
 var stopSpeech = function() {
     responsiveVoice.cancel();
 }
@@ -64,3 +63,16 @@ var checkSupport = function() {
         alert("Sorry ! Your browser doesn't support Text To Speech conversion.");
     }    
 }
+
+Mousetrap.bind('i', function() { 
+    var x = document.getElementById("ttsInput");
+    x.focus();
+});
+
+Mousetrap.bind(['command+enter', 'ctrl+enter'], function(e) {
+    startSpeech();
+});
+
+Mousetrap.bind(['command+c', 'ctrl+c'], function(e) {
+    stopSpeech();
+});

@@ -20,7 +20,7 @@
     
     <h3 class="checker" onclick="checkSupport()">( check your browser compatibility )</h3>
     <section>
-        <textarea id="ttsInput" class="topcoat-textarea" placeholder="Yo... Whazzzup ??? Paste anything here, and press the speak button to convert text into speech !!!"></textarea>             
+        <textarea id="ttsInput" class="topcoat-textarea mousetrap" placeholder="Yo... Whazzzup ??? Paste anything here, and press the speak button to convert text into speech !!!"></textarea>             
         <div id="customise-options">
             <label id="voice-label">
                 Select voice :
@@ -48,8 +48,8 @@
             </label>                                  
         </div>
         <div class="button-row">
-            <button id="stop-button" class="topcoat-button--large" onclick="stopSpeech()">STOP</button>
-            <button id="speak-button" class="topcoat-button--large--cta" onclick="startSpeech()" >SPEAK</button>            
+            <button id="stop-button" class="topcoat-button" onclick="stopSpeech()">STOP</button>
+            <button id="speak-button" class="topcoat-button--cta" onclick="startSpeech()" >SPEAK</button>            
         </div>
     </section>
     <br>
@@ -65,6 +65,7 @@
         <div style="clear:both;">&nbsp;</div>           
     </footer>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script type="text/javascript" src="js/mousetrap.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

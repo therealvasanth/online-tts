@@ -9,11 +9,11 @@ Just paste any text you want to be spoken out in the TEXTAREA and press the SPEA
 
 ### USING VIA KEYBOARD
 
-* Press 'i' to highlight the TEXTAREA and " CTRL+V " to paste the text inside it.
+* Press 'i' to highlight the TEXTAREA and " CTRL+V " to paste the text or type any text inside it.
 
-* Press " CTRL+ENTER " to speak out the pasted text.
+* Press "CTRL+ENTER" or "CMD+ENTER" to speak out the text entered.
 
-* To stop the speech, press " CTRL+C "
+* Press "CTRL+C" or "CMD+C" to stop the speech.
 
 
 ## Built With
@@ -38,4 +38,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Thanks to ResponsiveVoice.JS
 * Thanks to Topcoat
 * Thanks to Mousetrap
-
