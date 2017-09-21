@@ -64,6 +64,9 @@ var checkSupport = function() {
     }    
 }
 
+var info = function() {
+    alert("How to use ONLINE TTS : \n \n* Press 'i' to highlight the TEXTAREA and \" CTRL+V \" to paste the text or type any text inside it.\n\n* Press \"CTRL+ENTER\" or \"CMD+ENTER\" to speak out the text entered.\n\n* Press \"CTRL+SPACE\" or \"CMD+SPACE\" to stop the speech.\n\n\n");
+}
 Mousetrap.bind('i', function() { 
     var x = document.getElementById("ttsInput");
     x.focus();
