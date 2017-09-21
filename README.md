@@ -13,7 +13,7 @@ Just paste any text you want to be spoken out in the TEXTAREA and press the SPEA
 
 * Press "CTRL+ENTER" or "CMD+ENTER" to speak out the text entered.
 
-* Press "CTRL+C" or "CMD+C" to stop the speech.
+* Press "CTRL+SPACE" or "CMD+SPACE" to stop the speech.
 
 
 ## Built With

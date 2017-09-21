@@ -73,6 +73,6 @@ Mousetrap.bind(['command+enter', 'ctrl+enter'], function(e) {
     startSpeech();
 });
 
-Mousetrap.bind(['command+c', 'ctrl+c'], function(e) {
+Mousetrap.bind(['command+space', 'ctrl+space'], function(e) {
     stopSpeech();
 });
