@@ -1,4 +1,4 @@
-var nativeVoice = 1, voices, speechSpeed = 0.8,info;
+var nativeVoice = 1, voices, speechSpeed = 1, info;
 
 var setInput = function() {
     var a = document.getElementById("ttsInput").value;
@@ -13,6 +13,7 @@ var setInput = function() {
 var setSpeed = function(x) {
     var b = document.getElementById("select-speed").value;
     speechSpeed = b;
+    console.log(b);
 }
 
 var startSpeech = function() {
@@ -65,7 +66,7 @@ var checkSupport = function() {
 }
 
 var info = function() {
-    alert("How to use ONLINE TTS : \n \n* Press 'i' to highlight the TEXTAREA and \" CTRL+V \" to paste the text or type any text inside it.\n\n* Press \"CTRL+ENTER\" or \"CMD+ENTER\" to speak out the text entered.\n\n* Press \"CTRL+SPACE\" or \"CMD+SPACE\" to stop the speech.\n\n\n");
+    alert("How to use ONLINE TTS : \n \n* Press 'i' to highlight the TEXTAREA and \" CTRL+V \" to paste the text or type any text inside it.\n\n* Press \"CTRL+ENTER\" or \"CMD+ENTER\" to speak out the text entered.\n\n* Press \"CTRL+/\" or \"CMD+/\" to stop the speech.\n\n\n");
 }
 Mousetrap.bind('i', function() { 
     var x = document.getElementById("ttsInput");
@@ -76,6 +77,34 @@ Mousetrap.bind(['command+enter', 'ctrl+enter'], function(e) {
     startSpeech();
 });
 
-Mousetrap.bind(['command+space', 'ctrl+space'], function(e) {
+Mousetrap.bind(['command+/', 'ctrl+/'], function(e) {
     stopSpeech();
 });
+
+/** 
+
+// code to control the speech speed using keyboard combinations
+
+Mousetrap.bind(['ctrl+,'], function(e) {
+    if(speechSpeed >= 0){
+        speechSpeed -= 0.2;    
+        document.getElementById("select-speed").value = speechSpeed;
+    } if(speechSpeed <= 0){
+        speechSpeed = 0;
+        alert("This is the minimum speed of speech available !");
+    }
+    console.log(speechSpeed);
+});
+
+Mousetrap.bind(['ctrl+.'], function(e) {
+    if(speechSpeed !== 0 && speechSpeed <= 1.4){
+        speechSpeed += 0.2;    
+        document.getElementById("select-speed").value = speechSpeed;
+    } if(speechSpeed > 1.4){
+        speechSpeed = 1.5;
+        alert("This is the maximum speed of speech available !");
+    }
+    console.log(speechSpeed);
+});
+
+**/
